@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 41</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var opc = "0";
+            var num;
+            while(opc != "10"){
+                opc = prompt("Escribe la opción que desees:\n -(1) El Triple\n -(2) El Cuadrado \n\
+ -(3) El logaritmo Neperiano\n -(4) El Seno\n -(5) El Coseno\n -(10) SALIR", "");
+        
+        switch(opc){
+            case"1":
+                num = prompt("Escribe el número","");
+                num = parseFloat(num);
+                alert("El triple de " + num + " es " + (3*num));
+                break;
+            case"2":
+                num = prompt("Escribe el número", "");
+                num = parseFloat(num);
+                alert("El cuadrdo de " + num + " es " + (num * num));
+                break;
+            case"3":
+                num = prompt("Escribe el número", "");
+                num = parseFloat(num);
+                alert("El Loagaritmo Neperiano de " + num + " es " + (Math.log(num)));
+                break;
+            case"4":
+                num = prompt("Escribe el ángulo en radianes", "");
+                num = parseFloat(num);
+                alert("El seno de " + num + " es " + Math.sin(num));
+                break;
+            case"5":
+                num = prompt("Escribe al ángulo en radianes", "");
+                num = parseFloat(num);
+                alert("El coseno de " + num + " es " + Math.cos(num));
+                break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

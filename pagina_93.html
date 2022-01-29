@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 93</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function MCD(a ,b){
+                var resto, aux;
+                if(a<b){
+                    aux=a;
+                    a=b;
+                    b=aux;
+                }
+                if((a%b) == 0) resto=b;
+                while((a%b) != 0){
+                    resto=a%b;
+                    a=b;
+                    b=resto;
+                }
+                return resto;
+            }
+        </script>
+    </head>
+    <body bgcolor="yellow"><font color="red">
+        <h1><p align="center">SIMPLIFICACIÓN DE FRACCIONES</p></h1>
+        
+            <form><b>
+                    <p align="center">Numerador: <input type="text" size="9" name="num1"><br>
+                        Denominador:<input type="text" size="9" name="den1"
+                                           onblur="document.forms[0].num2.value=document.forms[0].num1.value/MCD(document.
+                                                       forms[0].num1.value,this.value);document.forms[0].den2.value=this.value/MCD(document.
+                                                       forms[0].num1.value,this.value);">
+                        <br>
+                    </p>
+                    <hr>
+                    <p align="center"><br>
+                        <input type="text" size="7" name="num2"><br>
+                        <input type="text" size="7" name="den2"><br><br>
+                        <input type="button" value="Otra Fracción"
+                               onclick="document.forms[0].num1.value=document.forms[0].den1.value=document.forms[0].
+                               num2.value=document.forms[0].den2.value">
+                    </p>
+            </b></form>
+        
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 67</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Programa que calcula la media aritmética de un número determinado de valores utilizando una función */            
+            /* El programa anterior mejorando la salida */
+            function media(n){
+                var x = new Array(n);
+                var sum = 0;
+                var salida = "";
+                for(i=0; i<n; i++){
+                    num = parseFloat(prompt("Escribe un valor de la serie("+(i+1)+"º):",""));
+                    x[i] = num;
+                    salida = salida + x[i] + " - ";
+                    sum = sum + x[i];
+                }
+                salida = salida + "\n La Media Aritmética de estos " + n + " números es " + (sum/n);
+                return salida;
+            }
+                var valores;
+                valores = parseInt(prompt("Escribe el número de elementos de la serie", ""));
+                alert(media(valores));
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

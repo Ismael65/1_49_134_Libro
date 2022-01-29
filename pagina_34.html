@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 34</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            // ecuación de segundo grado
+           var a, b, c;
+           var discri;
+           var x1, x2;
+           a = prompt("Escribe el coeficiente de la x^2 ", "");
+           a = parseFloat(a);
+           b = prompt("Escribe el coeficiente de X ", "");
+           b = parseFloat(b);
+           c = prompt("Escribe el término independiente ", "");
+           c = parseFloat(c);
+           discri = (b*b)-4*a*c;
+           if(discri < 0) alert("Soluciones imaginarias");
+           if(discri == 0){
+               x1 = -b/(2*a);
+               alert("Solución doble que es " + x1);
+           }
+           if(discri > 0){
+               x1 = (-b+Math.sqrt(discri))/(2*a);
+               x2 = (-b-Math.sqrt(discri))/(2*a);
+               alert("Las soluciones son = " + x1 + " y " + x2);
+           }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

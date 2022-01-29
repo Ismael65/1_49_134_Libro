@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 62 A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Programa que calcula potencias y raices utilizando dos funciones */
+            function pot(){
+                var b, e;
+                var result;
+                b = parseFloat(prompt("Escribe la base de la potencia", ""));
+                e = parseFloat(prompt("Escribe el exponente", ""));
+                result = b + " elevado a " + e + " es " + Math.pow(b,e);
+                alert(result);
+            }
+            function raiz(){
+                var b, e;
+                var resul;
+                b = parseFloat(prompt("Escribe el radicando de la raíz", ""));
+                e = parseFloat(prompt("Escribe el índice de la raíz", ""));
+                resul = "La raíz " + e + " -ésima de " + b + " es " + Math.pow(b,1/e);
+                alert(resul);
+            }
+            
+            var opc = "s";
+            while(opc != "S"){
+                opc = prompt("Escribe la opción que desees: \n (P) Calcula una potencia (R)Calcula una raíz (S) Salir del programa", "S");
+                switch(opc){
+                    case "P":
+                    case "p":
+                        pot();
+                        break;
+                    case "R":
+                    case "r":
+                        raiz();
+                        break;                        
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

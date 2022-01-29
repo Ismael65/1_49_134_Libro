@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 66</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Programa que calcula la media aritmética de una serie indeterminada de valores */
+            var x = new Array();
+            var med;
+            
+            var y = 0;
+            var i = 0;
+            var sum = 0;
+            while(y != 9999){
+                y = parseFloat(prompt("Introduce un valor \n para acabar escribe 9999", "9999"));
+                x[i] = y;
+                i++;
+            }
+            x[i] = 0;
+            for(j=0; j<i-1; j++){
+                sum = sum + x[j];
+            }
+            med = sum / j;
+            alert("La media es " + med);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

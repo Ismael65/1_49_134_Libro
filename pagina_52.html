@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 52</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            alert("Programa que ahora llamará a una función");
+            mediageo();
+            alert("Se acabó lo que se daba");
+            
+            /* ¡Atención!: a continuación tenemos la función*/
+            function mediageo(){
+                var a, b;
+                a = prompt("Escribe un número","");
+                a = parseFloat(a);
+                b = prompt("Escribe otro número","");
+                b = parseFloat(b);
+                alert("La media geométrica de " + a + " y " + b + " es " + Math.sqrt(a*b));
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 27 A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var nom;
+            var indice = 1;
+            var num;
+            var respuesta = "";
+            nom = prompt("Escribe tu nombre: ", "");
+            num = prompt("Cuántas veces quieres que lo repita: ", "");
+            num = parseInt(num, 10);  // era una cadena y ahora es un número
+            while(indice <= num){
+                respuesta = respuesta + nom + "\n";
+                indice++;
+            }
+            alert(respuesta);
+            // document.write(respuesta + "<br>");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

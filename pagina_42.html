@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 42</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var num, bien, notanum, notactual;
+            num = parseInt(prompt("Escribe el número total de preguntas",""));
+            bien = parseInt(prompt("Escribe el número de respuestas acertadas",""));
+            notanum = parseInt(10*bien/num);
+            switch(notanum){
+                case 0:
+                    notactual = "Muy Deficiente";
+                    break;
+                case 1:
+                    notactual = "Muy Deficiente";
+                    break;
+                case 2:
+                    notactual = "Deficiente";
+                    break;
+                case 3:
+                    notactual = "Deficiente";
+                    break;
+                case 4:
+                    notactual = "Insuficiente";
+                    break;
+                case 5:
+                    notactual = "Suficiente";
+                    break;
+                case 6:
+                    notactual = "Bien";
+                    break;
+                case 7:
+                    notactual = "Notable";
+                    break;
+                case 8:
+                    notactual = "Notable";
+                    break;
+                case 9:
+                    notactual = "Excelente";
+                    break;
+                case 10:
+                    notactual = "Matricula de Honor";
+                    break;               
+            }
+            alert("La nota cualitativa es " + notactual);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

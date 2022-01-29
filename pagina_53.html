@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 53</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var opc = "0";
+            while(opc != "T" && opc != "t"){
+                opc = prompt("Escribe la letra de la opción deseada:\n(S) Sumar \n(R) Raíz Cuadrada \n(L) Logaritmo Neperiano\n\
+(A) Ayuda \n(T) Terminar","");
+            if(opc == "S" || opc == "s") suma();
+            if(opc == "R" || opc == "r") raiz();
+            if(opc == "L" || opc == "l") logaritmo();
+            if(opc == "A" || opc == "a") ayuda();
+            }
+            function suma(){
+                var a, b;
+                a = prompt("Escriba el primer sumando", "");
+                a = parseFloat(a);
+                b = prompt("Escriba el segundo sumando", "");
+                b = parseFloat(b);
+                alert("La suma de " + a + " y " + b + " es " + (a+b));
+            }           
+            function raiz(){
+                var a;
+                a = prompt("Escribe el radicado", "");
+                a = parseFloat(a);
+                alert("La raíz cuadrada de " + a + " es " + Math.sqrt(a));
+            }
+            function logaritmo(){
+                var x;
+                x = prompt("Escribe un número positivo", "");
+                x = parseFloat(x);
+                alert("El logaritmo neperiano de " + x + " es " + Math.log(x));
+            }
+            function ayuda(){
+                alert("Es bastante tonto que me pidas ayuda\n pero aquí la tienes:\n\t Pulsa 'S' si quieres sumar\n\
+\t Pulsa 'R' para la raíz cuadrada \n\t Pulsa 'L' para el Logaritmo neperiano\n\
+\t Pulsa 'A' para acceder a la ayuda \n\t Pulsa 'T' para acabar");
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

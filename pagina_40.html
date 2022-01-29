@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 40</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var x, num;
+            var i = 0;
+            x = Math.round(9*Math.random()+1);
+            
+            while(i<5){
+                i++;
+                num = parseInt(prompt("Escribe un entero entre 1 y 10, intento " + i, ""));
+                if(num == x){
+                    alert("Lo has logrado en " + i + " tentativas");
+                    break;
+                }
+                if(i == 5){
+                    alert("Lo siento pero se han acabado tus 'vidas', el número era " + x);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

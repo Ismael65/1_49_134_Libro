@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 61</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Programa que construye una tabla de valores de y=mx+n utilizando una función */
+            function recta(a, b){
+                salida = "Tabla de valores de y = " + a + " x + " + b + "\n";
+                for(i=-5; i<=5; i++){
+                    y = a * i + b;
+                    salida = salida + "X = " + i + "\t" + " Y = " + y + "\n";
+                }
+                return salida;
+            }
+            m = parseFloat(prompt("Tabla de valores de y = mx + n \n Escribe el valor de m", ""));
+            n = parseFloat(prompt("Tabla de valores de y = mx + n \n Escribe el valor de n"));
+            alert(recta(m,n));
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

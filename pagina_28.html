@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 28</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var num;
+            var sum = 0;
+            var pro = 1;
+            var respuesta = "";
+            num = prompt("Escribe un número diferente de cero: ","");
+            num = parseFloat(num);
+            while(num != 0){
+                sum = sum + num;
+                pro = pro * num;
+                respuesta = respuesta + num + "\t suma parcial: " + sum + "\t producto parcial: "
+                    + pro + "\n";
+            num = prompt("Escribe otro número (para acabar introduce cero)", "");
+            num = parseFloat(num);           
+            }
+            alert(respuesta);
+            // document.write(respuesta + "<br>");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

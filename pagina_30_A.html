@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 30 A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var salida = "";
+            var num;
+            var mult;
+            var sum = 0;
+            num = prompt("¿Múltiplos de qué número?", "");
+            num = parseInt(num);
+            for(i=0; i<=10; i++){
+                mult = num * i;
+                salida = salida + mult + " ";
+                sum = sum + mult;
+            }
+            alert(salida + "\n Suma: " + sum);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

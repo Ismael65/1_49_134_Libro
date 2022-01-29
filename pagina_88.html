@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 88</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function valores(x1, x2, paso){
+                var y;
+                var salida="";
+                x1=parseFloat(x1);
+                x2=parseFloat(x2);
+                paso=parseFloat(paso);
+                for(i=x1; i<=x2; i=i+paso){
+                    y = i*i-5*i+10;
+                    salida = salida + " x= " + i + " y= " + y + "<br>";
+                }
+                document.write(salida);
+            }
+        </script>
+    </head>
+    <body>
+        
+        <form>
+            Primer o mínimo valor de X: <input type="text" name="min">
+            <br>
+            Último o máximo valor de X: <input type="text" name="max">
+            <br>
+            Incremento o Variación entre los valores de X <input type="text" name="incr">
+            <br>
+            <hr>
+            <input type="button" value="Tabla de Valores" 
+                   onclick="valores(document.forms[0].min.value, document.forms[0].max.value, 
+                        document.forms[0].incr.value);">
+            <hr>
+            <br>
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 56 A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Determina si un número es primo utilizando una función */
+            
+            var num;
+            num = prompt("Escribe un número entero","");
+            num = parseInt(num);
+            if(primo(num) == "S"){
+                alert(num + " es primo");
+            }else{
+                alert(num + " NO es primo");
+            }
+            function primo(x){
+                var resto;
+                for(i=2; i<x-1; i++){
+                    resto = x % i;
+                    if((resto == 0) && (x != 2)){
+                        return "N";
+                    }
+                }
+                return "S";
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

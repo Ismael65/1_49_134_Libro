@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 54</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var x, y, result;
+            x = prompt("Escribe el primer sumando", "");
+            x = parseFloat(x);
+            y = prompt("Escribe el segundo sumando", "");
+            y = parseFloat(y);
+            /* A continuación llamo a la función para calcular el cuadrado de la suma de x e y */
+            result = SumaCuadrado(x, y);
+            alert("El cuadrado de la suma de " + x + " y " + y + " es " + result);
+            /* A continuación tengo la definición de la función */
+            function SumaCuadrado(a, b){
+                return(a*a+b*b+2*a*b);
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

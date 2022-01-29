@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 33 A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var opcion = "S";
+            var cat1, cat2, hipo;
+            while(opcion == "S" || opcion == "s"){
+                cat1 = prompt("Escribe el valor de un cateto: ", "");
+                cat2 = prompt("Escribe el valor del otro cateto: ", "");
+                cat1 = parseInt(cat1);
+                cat2 = parseInt(cat2);
+                hipo = Math.sqrt((cat1*cat1) + (cat2 * cat2));
+                alert("La hipotenusa del triangulo de cateto " + cat1 + " y " + cat2 + " es " + hipo);
+                opcion = prompt("¿Quieres calcular otra hipotenusa? (S/N) ", "");
+            }
+            alert("Adiós muy buenas");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

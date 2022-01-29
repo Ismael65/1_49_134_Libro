@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 70</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Simula una matirz de 2 dimensiones */
+            var Matriz2D = new Array(5);
+            for(i=0; i <5; i++){
+                var Aux = new Array(5);
+                for(j=0; j<5; j++){
+                    Aux[j]=" E "+i+j;
+                }
+                Aux[4] +="\n";
+                Matriz2D[i] = Aux;
+            }
+            alert(Matriz2D);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

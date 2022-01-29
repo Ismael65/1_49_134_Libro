@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 74</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Los temporizadores son objetos sin representación física que se encargan de ejecutar una
+             * tareaal cabo de cierto tiempo que se le indica
+             * NombreTemp = setTimeout("nombreFunción()", tiempo);  */
+            /* Texto animado */
+            var velocidad = 200;
+            var letras;
+             function animas(){
+                 letras = new Array();
+                 var texto = "Uso de cadenas con JavaScript para efectos dinámicos";
+                 for(i=0; i<texto.length; i++){
+                     letras[i] = texto.charAt(i);                     
+                 }
+                 mueveLetras();
+             }
+             
+             var TextoAct = "";
+             var n = -1;
+             
+             function mueveLetras(){
+                 n++;
+                 TextoAct += letras[n];
+                 document.forms[0].TextoDinamico.value = TextoAct;
+                 if(n == letras.length-1){
+                     n = -1;
+                     TextoAct = "";
+                 }
+                 setTimeout("mueveLetras()", velocidad);
+             }
+        </script>
+    </head>
+    <body onload="animas();">
+        
+        <form>
+            <input type="text" name="TextoDinamico" value="" size="120">
+        </form>
+    </body>
+</html>

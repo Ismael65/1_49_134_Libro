@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 68</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            /* Programa que calcula, dada una serie de 10 números, la media aritmética, las
+             * desviaciones respecto a la media, la desviación media, la varianza y la desviación típica  */
+            
+            var x = new Array(10);
+            var sum = 0;
+            var med;
+            var des = new Array(10);
+            var sum1 = 0;
+            var sum2 = 0;
+            var desmed, vari, dt;
+            var salida = "VALORES: \n";
+            var salida1 = "DESVIACIONES RESPECTO A LA MEDIA: \n";
+            
+            for(i=0; i<10; i++){
+                num = parseFloat(prompt("Escribe un valor de la serie (" + (i+1) + "º):", ""));
+                x[i] = num;
+                salida = salida + x[i] + " - ";
+                sum = sum + x[i];
+            }
+            med = sum/10;
+            
+            for(i=0; i<10; i++){
+                des[i] = Math.abs(x[i]-med);
+                salida1 = salida1 + des[i] + " - ";
+                sum1 = sum1 + des[i];
+                sum2 = sum2 + (des[i]*des[i]);
+            }
+            
+            desmed = sum1/10;
+            vari = sum2/10;
+            dt = Math.sqrt(vari);
+            alert(salida + "\n" + "MEDIA ARITMÉTICA= " + med + "\n" + salida1 + "\n" + "DESVIACIÓN MEDIA= "
+                    + desmed + "\n VARIANZA= " + vari + "\n DESVIACIÓN TÍPICA= " + dt);
+            
+            document.write(salida + "<br>" + "MEDIA ARITMÉTICA= " + med + "<br>" + salida1 + "<br>" + "DESVIACIÓN MEDIA= "
+                    + desmed + "<br> VARIANZA= " + vari + "<br> DESVIACIÓN TÍPICA= " + dt);
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>
+                Dada la serie estadística: x1, x2, x3,.....xn <br>
+                Media aritmética: x=(x1+x2+x3+....)/n <br>
+                Desviacion respecto a la media: d1=|x1-1|, d2=|x2-1|, ..... <br>
+                Desviación media: es la media aritmética de las desviaciones <br>
+                Varianza: es la media aritmética de las desviaciones al cuadrado <br>
+                Desviación típica: es la raíz cuadrada de la varianza <br>
+            </p>
+        </div>
+        
+        
+    </body>
+</html>

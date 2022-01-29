@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 84</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function a(x, y){
+                return(parseFloat(x)*parseFloat(y)/2);
+            }
+        </script>
+    </head>
+    <body bgcolor="#0000ff">
+        
+        <font color="#ff0000">
+        <h1><p align="center">Calculo del Área de un triángulo</h1>
+        <hr>
+        </font>
+        <font color="#ffffff"><p>
+            Escribe en los siguientes cuadros la base y la altura del triángulo.
+            Para pasar de un cuadro al siguiente pulsa la tecla de tabulación
+            [TAB]. Al situarse en el último cuadro, automáticamente aparecerá
+            el valor del área.
+            Para escribir un dato en decimales, debes utilizar el "punto decimal",
+            no la coma.
+            <br>
+        <hr>
+        </font>
+        <font color="yellow">
+        <form>
+        Base del triágulo <input type="text" size="5" name="bas">
+        <br>
+        Altura del triángulo <input type="text" size="5" name="alt" 
+               onblur="document.forms[0].result.value=a(document.forms[0].bas.value,this.value);">
+        <br>
+        <br><hr><p align="center"><b>
+        Área del triángulo <input type="text" size="10" name="result">
+            </b></p>
+        <hr>    
+        </form>
+        
+        
+        </font></b>
+        
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 36 A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            var cad;
+            var salida = "";
+            for(i=1; i<=5; i=i+1){
+                cad = "n= " + i + "\t\te= " + Math.pow(1+1/i,i) + "\n";
+                salida = salida + cad;
+            }
+            for(i=100; i<= 50000000000; i=i*10){
+                cad = "n= " + i +  "\t\te= " + Math.pow(1+1/i,i) + "\n";
+                salida = salida + cad;                
+            }
+            salida = salida + "Verdadero valor de e= " + Math.E;
+            alert(salida);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

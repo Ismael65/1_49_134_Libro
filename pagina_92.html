@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pagina 92</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function factorial(num){
+                var fact = 1;
+                num = parseInt(num);
+                for(i=1; i<=num; i++) fact = fact*i;
+                return fact;
+            }
+        </script>
+    </head>
+    <body bgcolor="#000000"><font color="white">
+        <h1><p align="center">CÁLCULO DEL FACTORIAL DE UN NÚMERO</p></h1>
+        </font>
+        <br>
+        <h3>El factorial de un número es el producto del número por los sucesivos
+        enteros anteriores, hasta llegar a la unidad.
+        Es decir, el factorial de 5 será 5*4*3*2*1 por lo tanto 120</h3>
+        <hr>
+        <form>
+            <h2><p align="center"><font color="red">
+            Escribe el número: <input type="text" name="x">
+            <br><br>
+            <input type="button" value="Calcular el Factorial"
+                   onclick="document.forms[0].f.value=factorial(document.forms[0].x.value);">
+            <input type="button" value="Otra vez"
+                   onclick="document.forms[0].x.value=document.forms[0].f.value">
+            <br><br>
+                <input type="text" name="f">
+                </font></p></h2>
+            <br><br>
+           
+        </form>
+        
+    </body>
+</html>
